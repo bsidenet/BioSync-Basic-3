@@ -1,0 +1,11 @@
+# Asgiref - Fornece implementações ASGI para servir aplicações web
+asgiref==3.8.1
+
+# Django - Framework web para desenvolvimento de aplicações web em Python
+Django==5.2
+
+# Sqlparse - Biblioteca para análise e formatação de SQL
+sqlparse==0.5.3
+
+# Typing Extensions - Fornece tipos de anotação para Python 3.6+
+tzdata==2025.2

@@ -1,0 +1,28 @@
+erDiagram
+    UTENTE {
+        int id PK
+        string username
+        string password
+        string email
+        -- Outros campos do utente --
+    }
+
+    MEDICO {
+        int id PK
+        string username
+        string password
+        string email
+        -- Outros campos do médico --
+    }
+
+    REGISTO {
+        int id PK
+        int utente_id FK
+        datetime data_hora
+        int pressao_sistolica
+        int pressao_diastolica
+        int frequencia_cardiaca
+    }
+
+    UTENTE ||--o{ REGISTO : "Possui"
+    MEDICO ||--o{ UTENTE : "Atende"

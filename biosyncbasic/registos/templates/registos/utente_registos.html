@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registos do Utente</title>
+</head>
+<body>
+    <h1>Registos do Utente</h1>
+    <ul>
+        {% for registo in registos %}
+        <li>
+            {{ registo.data_hora }}:
+            Pressão Sistólica: {{ registo.pressao_sistolica }},
+            Pressão Diastólica: {{ registo.pressao_diastolica }},
+            Frequência Cardíaca: {{ registo.frequencia_cardiaca }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
